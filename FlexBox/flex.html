@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .flex_container{
+            background-color: lightgreen;
+            border: 2px solid green;
+            height: 500px;
+            width: 900px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        .container{
+            height: 100px;
+            width: 800px;
+            background-color: lightblue;
+            border: 2px solid blue;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .box1{
+            height: 70px;
+            width: 230px;
+            background-color: peachpuff;
+            border: 2px solid salmon;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sub{
+            background-color: red;
+            height: 60px;
+            width: 215px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .sub1{
+            background-color: lightpink;
+            height: 50px;
+            width: 100px;
+        }
+        .container1{
+            height: 200px;
+            width: 800px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+        .box2{
+            background-color: palevioletred;
+            border: 2px solid brown;
+            height: 200px;
+            width: 385px;
+        }
+        .box2_2{
+            height: 200px;
+            width: 385px;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            flex-direction: column;
+        }
+        
+        .sub2{
+            height: 90px;
+            width: 385px;
+            background-color: palevioletred;
+            border: 2px solid brown;
+        }
+        
+        .container2{
+            height: 90px;
+            width: 800px;
+            background-color: lightblue;
+            border: 2px solid blue;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .box3{
+            height: 70px;
+            width: 230px;
+            background-color: lightgrey;
+            border: 2px solid lightslategray;
+        }
+        .box4{
+            height: 70px;
+            width: 230px;
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            flex-direction: row;
+            
+        }
+        .sub3{
+            height: 70px;
+            width: 107px; 
+            background-color: peachpuff;
+            border: 2px solid salmon;
+        }
+    </style>
+</head>
+<body>
+<div class="flex_container">
+    <div class="container">
+      <div class="box1"></div> 
+      <div class="box1">
+        <div class="sub">
+            <div class="sub1"></div>
+            <div class="sub1"></div>
+        </div>
+      </div> 
+      <div class="box1"></div>
+    </div>
+
+    <div class="container1">
+       <div class="box2"></div>
+        <div class="box2_2">       
+            <div class="sub2"></div>
+            <div class="sub2"></div>
+       </div>    
+    </div>
+
+    <div class="container2">
+        <div class="box3"></div>    
+        <div class="box4">
+            <div class="sub3"></div>
+            <div class="sub3"></div>
+        </div>   
+      <div class="box3"></div>
+    </div>
+</div>
+</body>
+</html>
