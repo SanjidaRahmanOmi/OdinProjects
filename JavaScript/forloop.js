@@ -20,3 +20,10 @@ for (const key in obj){
     name Omi
     role Programmer
     */
+   
+    //for of loop
+    for (const iterator of "omi") {
+        console.log(iterator)      
+    }
+    //Output will show the individual letter of "omi"
+    
