@@ -22,8 +22,25 @@ function getComputerChoice() {
       console.log(`You loss! ${computerSelection} beats ${playerSelection}`)
     }
   }
-  const player="rock";
+  /*const player="rock";
   const playerSelection = player.toLowerCase();
   const computerSelection = getComputerChoice().toLowerCase();
   console.log(computerSelection)
-  playRound(playerSelection, computerSelection);
+  playRound(playerSelection, computerSelection);*/
+  
+  function game(){
+    let round;
+    for(round=1;round<=5;round++){
+      const playerChoice = "Rock";
+      const player = playerChoice.toLowerCase();
+      const computer = getComputerChoice().toLowerCase();
+      console.log(`Round Number:${round}`);
+      console.log(`Player chose ${player}`);
+      console.log(`Computer chose ${computer}`);
+      const roundResult = playRound(player, computer);
+      console.log(roundResult);
+    }  
+      game();
+  }
+
+  
