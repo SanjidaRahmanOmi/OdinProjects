@@ -21,3 +21,15 @@ for(let index=0;index<a.length;index++){
     const element=a[index];
     console.log(element);
 }
+let newArr=[];
+for(let index=0;index<a.length;index++){
+    const element=a[index];
+    newArr.push(element**2);
+}
+console.log("New Array: ",newArr)
+
+//map function
+let mapArr = a.map((e)=>{
+    return e**2
+})
+console.log(mapArr) //output is same as newArr
