@@ -12,3 +12,12 @@ arr.shift();//works like pop but it pop first element
 console.log(arr);
 arr.unshift("A")//works like push but it push element in first index
 console.log(arr);
+console.log(arr.length);
+
+//loop in array
+let a=[2,4,6,8,10]
+console.log("Array elements: ");
+for(let index=0;index<a.length;index++){
+    const element=a[index];
+    console.log(element);
+}
