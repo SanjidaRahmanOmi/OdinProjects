@@ -33,3 +33,17 @@ let mapArr = a.map((e)=>{
     return e**2
 })
 console.log(mapArr) //output is same as newArr
+
+//filter
+const greaterthantwo =(e)=>{
+    if(e>2){
+        return true
+    }
+    return false
+}
+console.log(a.filter(greaterthantwo))//it prints numbers from array which are greater that two
+
+const red=(a,b)=>{
+    return a*b;
+}
+console.log(a.reduce(red)) // it prints multiplication of all numbers from array without using loop on array index
